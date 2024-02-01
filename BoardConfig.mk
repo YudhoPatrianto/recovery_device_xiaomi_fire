@@ -162,6 +162,9 @@ TW_HAS_MTP := true
 # USB OTG
 TW_USB_STORAGE := true
 
+# Support /data/media
+RECOVERY_SDCARD_ON_DATA := true
+
 # LOGCAT
 TARGET_USES_LOGD := true    
 TWRP_INCLUDE_LOGCAT := true
