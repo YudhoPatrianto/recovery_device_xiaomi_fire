@@ -45,6 +45,11 @@ PRODUCT_PACKAGES += \
     bootctrl.mt6768 \
     bootctrl.mt6768.recovery
 
+# create_pl_dev
+PRODUCT_PACKAGES += \
+    create_pl_dev
+    create_pl_dev.recovery
+
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
