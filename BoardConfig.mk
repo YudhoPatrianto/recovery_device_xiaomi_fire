@@ -186,3 +186,8 @@ TW_INCLUDE_RESETPROP := true
 
 # Maintainer
 TW_DEVICE_VERSION := YudhoPatrianto
+
+# Statusbar
+TW_CUSTOM_CPU_POS := "290"
+TW_CUSTOM_CLOCK_POS := "60"
+TW_CUSTOM_BATTERY_POS := "780"
