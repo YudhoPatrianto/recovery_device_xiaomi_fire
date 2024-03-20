@@ -187,6 +187,11 @@ TW_INCLUDE_RESETPROP := true
 # Maintainer
 TW_DEVICE_VERSION := YudhoPatrianto
 
+# Declarate Device Codename
+SHRP_DEVICE_CODE := fire
+
+
+
 # Statusbar
 TW_CUSTOM_CPU_POS := "290"
 TW_CUSTOM_CLOCK_POS := "60"
