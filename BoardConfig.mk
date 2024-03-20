@@ -18,7 +18,6 @@ BOARD_ROOT_EXTRA_FOLDERS += metadata
 AB_OTA_UPDATER := true
 AB_OTA_PARTITIONS += \
     system \
-    system_ext \
     vendor \
     product \
     boot \
@@ -87,7 +86,7 @@ TARGET_COPY_OUT_VENDOR := vendor
 TARGET_COPY_OUT_PRODUCT := product
 BOARD_SUPER_PARTITION_SIZE := 9126805504 # TODO: Fix hardcoded value
 BOARD_SUPER_PARTITION_GROUPS := xiaomi_dynamic_partitions
-BOARD_XIAOMI_DYNAMIC_PARTITIONS_PARTITION_LIST := system system_ext vendor product
+BOARD_XIAOMI_DYNAMIC_PARTITIONS_PARTITION_LIST := system vendor product
 BOARD_XIAOMI_DYNAMIC_PARTITIONS_SIZE := 9122611200 # TODO: Fix hardcoded value
 
 # Platform
