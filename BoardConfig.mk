@@ -196,6 +196,23 @@ SHRP_MAINTAINER := YudhoPatrianto
 # SHRP Path
 SHRP_PATH := device/xiaomi/fire
 
+# Misc SHRP
+SHRP_REC_TYPE := SAR
+SHRP_DEVICE_TYPE := A/B
+SHRP_REC := /dev/block/platform/bootdevice/by-name/boot
+SHRP_INTERNAL := /sdcard
+SHRP_EXTERNAL := /sdcard1
+SHRP_OTG := /usb_otg
+SHRP_FLASH := 1
+SHRP_AB := true
+SHRP_NO_SAR_AUTOMOUNT := true
+SHRP_FLASH_MAX_BRIGHTNESS := 300
+SHRP_EXPRESS := true
+SHRP_EXPRESS_USE_DATA := true
+SHRP_CUSTOM_FLASHLIGHT := false
+SHRP_NOTCH := true
+SHRP_LITE := false
+
 # Statusbar
 TW_CUSTOM_CPU_POS := "290"
 TW_CUSTOM_CLOCK_POS := "60"
