@@ -190,7 +190,8 @@ TW_DEVICE_VERSION := YudhoPatrianto
 # Declarate Device Codename
 SHRP_DEVICE_CODE := fire
 
-
+# SHRP Maintainer
+SHRP_MAINTAINER := YudhoPatrianto
 
 # Statusbar
 TW_CUSTOM_CPU_POS := "290"
