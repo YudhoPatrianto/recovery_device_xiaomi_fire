@@ -193,6 +193,9 @@ SHRP_DEVICE_CODE := fire
 # SHRP Maintainer
 SHRP_MAINTAINER := YudhoPatrianto
 
+# SHRP Path
+SHRP_PATH := device/xiaomi/fire
+
 # Statusbar
 TW_CUSTOM_CPU_POS := "290"
 TW_CUSTOM_CLOCK_POS := "60"
