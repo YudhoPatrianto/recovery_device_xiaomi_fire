@@ -184,6 +184,10 @@ TW_PREPARE_DATA_MEDIA_EARLY := true
 TW_INCLUDE_LIBRESETPROP := true
 TW_INCLUDE_RESETPROP := true
 
+# Brightness
+TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
+TW_MAX_BRIGHTNESS := 2047
+
 # Maintainer
 TW_DEVICE_VERSION := YudhoPatrianto
 
