@@ -203,7 +203,7 @@ SHRP_PATH := device/xiaomi/fire
 # Misc SHRP
 SHRP_REC_TYPE := SAR
 SHRP_DEVICE_TYPE := A/B
-SHRP_REC := /dev/block/platform/bootdevice/by-name/boot
+SHRP_REC := /dev/block/bootdevice/by-name/boot
 SHRP_INTERNAL := /sdcard
 SHRP_EXTERNAL := /sdcard1
 SHRP_OTG := /usb_otg
