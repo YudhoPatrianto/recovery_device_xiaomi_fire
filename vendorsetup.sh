@@ -96,6 +96,7 @@ if [ -f "$(gettop)/bootable/recovery/orangefox.cpp" ]; then
 	            	export OF_ALLOW_DISABLE_NAVBAR=0
 	            	export FOX_DELETE_AROMAFM=1
                 export OF_USE_SYSTEM_FINGERPRINT=1
+								export OF_DEFAULT_KEYMASTER_VERSION=4.1
                 
                 # Backup
 		            export OF_USE_TWRP_SAR_DETECT=1
