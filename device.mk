@@ -47,7 +47,7 @@ PRODUCT_PACKAGES += \
 
 # create_pl_dev
 PRODUCT_PACKAGES += \
-    create_pl_dev
+    create_pl_dev \
     create_pl_dev.recovery
 
 # Soong
