@@ -9,4 +9,6 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/pb_fire.mk
 
 COMMON_LUNCH_CHOICES := \
+    pb_fire_user \
+    pb_fire-userdebug \
     pb_fire-eng
