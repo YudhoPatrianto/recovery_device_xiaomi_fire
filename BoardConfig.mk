@@ -56,7 +56,6 @@ BOARD_KERNEL_CMDLINE := \
         androidboot.force_normal_boot=1 \
         loop.max_part=7 \
         androidboot.init_fatal_reboot_target=recovery \
-        androidboot.selinux=permissive
 BOARD_BOOTIMG_HEADER_VERSION := 2
 BOARD_KERNEL_BASE := 0x40078000
 BOARD_KERNEL_PAGESIZE := 2048
