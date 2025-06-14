@@ -53,10 +53,13 @@ TARGET_SCREEN_DENSITY := 440
 
 # Kernel
 BOARD_KERNEL_CMDLINE := \
-        bootopt=64S3,32N2,64N2 \
-        androidboot.force_normal_boot=1 \
-        loop.max_part=7 \
-        androidboot.init_fatal_reboot_target=recovery
+    bootopt=64S3,32N2,64N2 \
+    androidboot.force_normal_boot=1 \
+    loop.max_part=7 \
+    androidboot.init_fatal_reboot_target=recovery \
+    androidboot.veritymode=disabled \
+    androidboot.verifiedbootstate=orange \
+    androidboot.selinux=permissive
 BOARD_BOOTIMG_HEADER_VERSION := 2
 BOARD_KERNEL_BASE := 0x40078000
 BOARD_KERNEL_PAGESIZE := 2048
