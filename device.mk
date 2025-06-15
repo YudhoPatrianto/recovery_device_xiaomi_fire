@@ -78,4 +78,4 @@ RECOVERY_LIBRARY_SOURCE_FILES += \
 # Log
 PRODUCT_VENDOR_PROPERTIES += \
     log.tag=I \
-    persist.log.tag=I \
+    persist.log.tag=I
