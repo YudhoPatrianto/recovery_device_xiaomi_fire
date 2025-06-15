@@ -1,4 +1,5 @@
-system                                     /system          ext4                ro wait,slotselect,logical
+system                                      /system         ext4                ro wait,slotselect,logical
+system_ext                                 /system_ext      ext4                ro.wait,slotselect,logical
 vendor                                    /vendor           ext4                ro wait,slotselect,logical
 product                                  /product           ext4                ro wait,slotselect,logical
 
