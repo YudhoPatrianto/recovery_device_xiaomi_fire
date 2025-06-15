@@ -17,10 +17,14 @@ BOARD_ROOT_EXTRA_FOLDERS += metadata
 # A/B
 AB_OTA_UPDATER := true
 AB_OTA_PARTITIONS += \
-    system \
-    vendor \
-    product \
     boot \
+    dtbo \
+    system \
+    system_ext \
+    product \
+    vendor \
+    odm \
+    vbmeta \
     vbmeta_vendor \
     vbmeta_system
 BOARD_USES_RECOVERY_AS_BOOT := true
