@@ -106,12 +106,6 @@ TARGET_USERIMAGES_USE_F2FS := true
 # Fstab
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab
 
-# Verified Boot
-# vbmeta
-BOARD_AVB_ENABLE := true
-BOARD_AVB_ALGORITHM := SHA256_RSA2048
-BOARD_AVB_KEY_PATH := external/avb/test/data/testkey_rsa2048.pem
-BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
 
 # Hack: prevent anti rollback
 PLATFORM_SECURITY_PATCH := 2127-12-31
