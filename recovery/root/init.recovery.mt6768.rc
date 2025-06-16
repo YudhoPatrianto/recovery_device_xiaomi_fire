@@ -2,11 +2,18 @@ import /init.microtrust.rc
 
 on init
     export LD_LIBRARY_PATH /system/lib64:/vendor/lib64:/vendor/lib64/hw:/system/lib64/hw
+    start logd
 
 on post-fs
 
 on property:ro.crypto.state=encrypted && property:ro.crypto.type=file
     install_keyring
+
+service logd system/bin/logd
+    user root
+    group root
+    socket logd stream 0660 root root
+    seclabel u:r:recovery:s0
 
 service vendor.gatekeeper-1-0 /vendor/bin/hw/android.hardware.gatekeeper@1.0-service
     interface android.hardware.gatekeeper@1.0::IGatekeeper default
