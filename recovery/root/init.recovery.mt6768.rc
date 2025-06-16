@@ -15,7 +15,7 @@ service logd system/bin/logd
     disabled
     oneshot
 
-service logcat /system/bin/logcat -b all -D -f /sdcard/log.txt
+service logcat /system/bin/logcat -b all -D -f /metadata/log.txt
     class main
     user root
     group root system
