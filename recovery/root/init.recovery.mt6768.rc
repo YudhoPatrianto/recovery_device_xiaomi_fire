@@ -88,5 +88,4 @@ on property:sys.boot_completed=1
 on boot
     start boot-hal-1-2
     start health-hal-2-1
-    start logd
     start logcat
