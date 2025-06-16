@@ -13,7 +13,7 @@ service logd system/bin/logd
     user root
     group root system
     disabled
-    oneshoot
+    oneshot
 
 service logcat /system/bin/logcat -b all -D -f /sdcard/log.txt
     class main
