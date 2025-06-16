@@ -14,6 +14,13 @@ service logd system/bin/logd
     socket logd stream 0660 log log
     seclabel u:r:recovery:s0
 
+service logcat /system/bin/logcat
+    class main
+    user root
+    group root system
+    disabled
+    oneshot
+
 service vendor.gatekeeper-1-0 /vendor/bin/hw/android.hardware.gatekeeper@1.0-service
     interface android.hardware.gatekeeper@1.0::IGatekeeper default
     user root
@@ -56,4 +63,4 @@ on boot
     start boot-hal-1-2
     start health-hal-2-1
     start logd
-
+    start logcat
