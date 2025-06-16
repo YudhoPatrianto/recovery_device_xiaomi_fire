@@ -9,10 +9,11 @@ on property:ro.crypto.state=encrypted && property:ro.crypto.type=file
     install_keyring
 
 service logd system/bin/logd
+    class main
     user root
-    group log
-    socket logd stream 0660 log log
-    seclabel u:r:recovery:s0
+    group root system
+    disabled
+    oneshoot
 
 service logcat /system/bin/logcat
     class main
