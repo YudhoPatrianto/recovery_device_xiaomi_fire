@@ -10,8 +10,6 @@ system /system erofs ro wait,slotselect,avb=vbmeta_system,logical,first_stage_mo
 system /system ext4 ro wait,slotselect,avb=vbmeta_system,logical,first_stage_mount,avb_keys=/avb/q-gsi.avbpubkey:/avb/r-gsi.avbpubkey:/avb/s-gsi.avbpubkey
 vendor /vendor erofs ro wait,slotselect,avb,logical,first_stage_mount
 vendor /vendor ext4 ro wait,slotselect,avb,logical,first_stage_mount
-odm   /odm     ext4 ro wait,slotselect,avb,logical,first_stage_mount,nofail
-odm   /odm     erofs ro wait,slotselect,avb,logical,first_stage_mount,nofail
 product /product erofs ro wait,slotselect,avb,logical,first_stage_mount
 product /product ext4 ro wait,slotselect,avb,logical,first_stage_mount
 /dev/block/by-name/md_udc /metadata ext4 noatime,nosuid,nodev,discard wait,check,formattable,first_stage_mount
