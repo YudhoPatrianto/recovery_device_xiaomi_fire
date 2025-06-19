@@ -1,8 +1,3 @@
-/*
- * SPDX-FileCopyrightText: 2024 The LineageOS Project
- * SPDX-License-Identifier: Apache-2.0
- */
-
 #define LOG_TAG "create_pl_dev"
 
 #include <android-base/unique_fd.h>
