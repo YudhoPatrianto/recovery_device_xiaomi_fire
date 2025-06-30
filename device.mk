@@ -75,6 +75,10 @@ RECOVERY_LIBRARY_SOURCE_FILES += \
     $(TARGET_OUT_SHARED_LIBRARIES)/libkeymaster41.so \
     $(TARGET_OUT_SHARED_LIBRARIES)/libpuresoftkeymasterdevice.so
 
+# Logd
+PRODUCT_PACKAGES += \
+    logd
+
 # Log
 PRODUCT_VENDOR_PROPERTIES += \
     log.tag=I \
