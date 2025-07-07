@@ -17,20 +17,30 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 # Update Engine & Update Verifier 
 PRODUCT_PACKAGES += \
     update_engine \
-    update_verifier \
-    update_engine_sideload
+    update_engine_sideload \
+    update_verifier
 
-# A/B
+PRODUCT_PACKAGES_DEBUG += \
+    update_engine_client
+
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
     POSTINSTALL_PATH_system=system/bin/otapreopt_script \
     FILESYSTEM_TYPE_system=ext4 \
     POSTINSTALL_OPTIONAL_system=true
 
-# A/B
+AB_OTA_POSTINSTALL_CONFIG += \
+    RUN_POSTINSTALL_vendor=true \
+    POSTINSTALL_PATH_vendor=bin/checkpoint_gc \
+    FILESYSTEM_TYPE_vendor=erofs \
+    POSTINSTALL_OPTIONAL_vendor=true
+
 PRODUCT_PACKAGES += \
-    otapreopt_script \
-    cppreopts.sh
+    update_engine \
+    update_engine_sideload \
+    update_verifier \
+    checkpoint_gc \
+    otapreopt_script
 
 # Boot control HAL
 PRODUCT_PACKAGES += \
