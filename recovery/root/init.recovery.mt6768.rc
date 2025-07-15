@@ -3,7 +3,10 @@ import /init.microtrust.rc
 on init
     export LD_LIBRARY_PATH /system/lib64:/vendor/lib64:/vendor/lib64/hw:/system/lib64/hw
 
-on post-fs
+on post-fs-data
+    mkdir /data/media 0770 media_rw media_rw
+    mkdir /data/media/0 0770 media_rw media_rw
+    symlink /data/media/0 /sdcard
 
 on property:ro.crypto.state=encrypted && property:ro.crypto.type=file
     install_keyring
