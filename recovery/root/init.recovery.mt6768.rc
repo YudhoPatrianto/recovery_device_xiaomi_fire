@@ -2,6 +2,7 @@ import /init.microtrust.rc
 
 on init
     export LD_LIBRARY_PATH /system/lib64:/vendor/lib64:/vendor/lib64/hw:/system/lib64/hw
+    start logd
 
 on post-fs-data
     mkdir /data/media 0770 media_rw media_rw
@@ -26,6 +27,17 @@ service vendor.keymaster-4-1-beanpod /vendor/bin/hw/android.hardware.keymaster@4
     oneshot    
     disabled
     seclabel u:r:recovery:s0
+
+service logd /system/bin/logd
+    class core
+    socket logdr seqpacket 0666 root root
+    socket logdw dgram+passcred 0222 root root
+    file /proc/kmsg r
+    file /dev/kmsg w
+    user root
+    group root
+    capabilities SYSLOG AUDIT_CONTROL SETGID SETUID
+    seclabel u:r:logd:s0
 
 on property:vendor.sys.listener.registered=true
     start vendor.gatekeeper-1-0
