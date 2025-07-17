@@ -7,6 +7,9 @@
 
 DEVICE_PATH := device/xiaomi/fire
 
+# DM Verity
+PB_DISABLE_DEFAULT_DM_VERITY := true
+
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
 
