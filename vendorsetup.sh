@@ -23,6 +23,7 @@ if [ -z "${FDEVICE}" ]; then
 	exit 1
 else
 	export FOX_BUILD_DEVICE="${FDEVICE}"
+	echo "[INFO] Setting FOX_BUILD_DEVICE to FOX_BUILD_DEVICE=${FDEVICE}"
 fi
 
 fox_get_target_device() {
