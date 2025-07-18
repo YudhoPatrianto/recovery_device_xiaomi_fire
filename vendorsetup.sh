@@ -43,7 +43,7 @@ if [ -f "$(gettop)/bootable/recovery/orangefox.cpp" ]; then
 		# Version / Maintainer infos
                	export TW_DEFAULT_LANGUAGE="en"
 		            export OF_MAINTAINER="YudhoPatrianto"
-		            export FOX_VERSION=R12.1_0
+		            export FOX_MAINTAINER_PATCH_VERSION=R12.1_0
 		            export FOX_BUILD_TYPE="Unofficial"
 	              export TARGET_DEVICE_ALT="fire"
 	              export LC_ALL="C"
