@@ -91,6 +91,10 @@ RECOVERY_LIBRARY_SOURCE_FILES += \
     $(TARGET_OUT_SHARED_LIBRARIES)/libkeymaster41.so \
     $(TARGET_OUT_SHARED_LIBRARIES)/libpuresoftkeymasterdevice.so
 
+# Copy Logd into /system/bin
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/recovery/root/system/bin/logd:$(TARGET_COPY_OUT_SYSTEM)/bin/logd
+
 # Log
 PRODUCT_VENDOR_PROPERTIES += \
     log.tag=I \
