@@ -42,6 +42,9 @@ if [ -z "$1" -a -z "$FOX_BUILD_DEVICE" ]; then
 fi
 
 if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
+	# Prevent Miui recovery
+	export OF_PATCH_AVB20=1
+
 	# Declarate for virtual A/B devices (Dynamic Partitions)
 	export FOX_VIRTUAL_AB_DEVICE=1
 	export FOX_AB_DEVICE=1
